@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion project.compileSdkVersion
+    defaultConfig {
+        applicationId "com.example.multiplayerdotandbox"
+        minSdkVersion project.minSdkVersion
+        targetSdkVersion project.targetSdkVersion
+        versionCode project.versionCode
+        versionName project.versionName
+
+    }
+
+    signingConfigs {
+
+    }
+
+    buildTypes {
+        release {
+
+            minifyEnabled false
+            debuggable true
+
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+static def getDate() {
+    new Date().format('dd_MMM_yyyy').toUpperCase()
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "androidx.appcompat:appcompat:1.2.0"
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+
+    implementation 'org.jetbrains:annotations:16.0.1'
+
+}

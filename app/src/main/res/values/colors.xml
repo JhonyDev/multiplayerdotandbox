@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/color_white</color>
+    <color name="colorPrimaryDark">@color/blue</color>
+    <color name="colorAccent">@color/blue</color>
+
+    <color name="colorBackground">@color/color_white</color>
+
+    <color name="color_white">#ffffff</color>
+    <color name="color_black_chocolate">#0F1108</color>
+
+    <color name="player1">#04A777</color>
+    <color name="player2">#FEC601</color>
+
+    <color name="blue">#101752</color>
+    <color name="color_text">@color/blue</color>
+    <color name="sky_blue">#AED6F1</color>
+</resources>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".activities.MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/muli_bold"
+        android:gravity="center_horizontal"
+        android:text="Multiplayer Dots and Boxes"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/color_text"
+        android:textSize="24sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.11" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtGridSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32sp"
+        android:fontFamily="@font/muli_bold"
+        android:text="Select Grid Size"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/color_text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutGameType" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtGameType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/muli_bold"
+        android:text="Select Game Type"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/color_text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnStart"
+        android:layout_width="0dp"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorAccent"
+        android:fontFamily="@font/muli_semi_bold"
+        android:gravity="center"
+        android:text="Start"
+        android:textColor="@color/color_white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:textAllCaps="true" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutGameType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32sp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGameType">
+
+        <androidx.appcompat.widget.AppCompatCheckedTextView
+            android:id="@+id/gameTypeSinglePlayer"
+            android:layout_width="100sp"
+            android:layout_height="60sp"
+            android:layout_marginEnd="16sp"
+            android:background="@drawable/selector_game_type"
+            android:checked="true"
+            android:fontFamily="@font/muli_semi_bold"
+            android:gravity="center"
+            android:text="Single\nPlayer"
+            android:textAlignment="center"
+            android:textColor="@color/color_text"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatCheckedTextView
+            android:id="@+id/gameTypeMultiPlayer"
+            android:layout_width="100sp"
+            android:layout_height="60sp"
+            android:background="@drawable/selector_game_type"
+            android:fontFamily="@font/muli_semi_bold"
+            android:gravity="center"
+            android:text="Multi\nPlayer"
+            android:textAlignment="center"
+            android:textColor="@color/color_text"
+            android:textSize="16sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGridSize">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatCheckedTextView
+                android:id="@+id/gridSizeFourByFour"
+                android:layout_width="100sp"
+                android:layout_height="60sp"
+                android:layout_marginEnd="16sp"
+                android:background="@drawable/selector_game_type"
+                android:checked="true"
+                android:fontFamily="@font/muli_semi_bold"
+                android:gravity="center"
+                android:text="4 x 4"
+                android:textAlignment="center"
+                android:textColor="@color/color_text"
+                android:textSize="28sp" />
+
+            <androidx.appcompat.widget.AppCompatCheckedTextView
+                android:id="@+id/gridSizeFiveByFive"
+                android:layout_width="100sp"
+                android:layout_height="60sp"
+                android:background="@drawable/selector_game_type"
+                android:fontFamily="@font/muli_semi_bold"
+                android:gravity="center"
+                android:text="5 x 5"
+                android:textAlignment="center"
+                android:textColor="@color/color_text"
+                android:textSize="28sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16sp"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatCheckedTextView
+                android:id="@+id/gridSizeSixBySix"
+                android:layout_width="100sp"
+                android:layout_height="60sp"
+                android:layout_marginEnd="16sp"
+                android:background="@drawable/selector_game_type"
+                android:fontFamily="@font/muli_semi_bold"
+                android:gravity="center"
+                android:text="6 x 6"
+                android:textAlignment="center"
+                android:textColor="@color/color_text"
+                android:textSize="28sp" />
+
+            <androidx.appcompat.widget.AppCompatCheckedTextView
+                android:id="@+id/gridSizeSevenBySeven"
+                android:layout_width="100sp"
+                android:layout_height="60sp"
+                android:background="@drawable/selector_game_type"
+                android:fontFamily="@font/muli_semi_bold"
+                android:gravity="center"
+                android:text="7 x 7"
+                android:textAlignment="center"
+                android:textColor="@color/color_text"
+                android:textSize="28sp" />
+        </TableRow>
+
+
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

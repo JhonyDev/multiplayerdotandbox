@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/mode"
+    tools:context=".activities.MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/muli_bold"
+        android:gravity="center_horizontal"
+        android:text="Multiplayer Dots and Boxes"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/color_text"
+        android:textSize="24sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.11" />
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtGameType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:layout_marginRight="70dp"
+        android:fontFamily="@font/muli_bold"
+        android:text="Select Game Type"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/color_text"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutGameType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92sp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGameType">
+
+        <TextView
+            android:id="@+id/gameTypeSinglePlayer"
+            android:layout_width="120sp"
+            android:layout_height="80sp"
+            android:layout_marginRight="25dp"
+
+
+            android:fontFamily="@font/muli_semi_bold"
+            android:gravity="center"
+            android:text="Single\nPlayer"
+            android:textAlignment="center"
+            android:textColor="@color/color_text"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/gameTypeMultiPlayer"
+            android:layout_width="120sp"
+            android:layout_height="80sp"
+            android:layout_marginRight="80dp"
+            android:fontFamily="@font/muli_semi_bold"
+            android:gravity="center"
+            android:text="Multi\nPlayer"
+            android:textAlignment="center"
+            android:textColor="@color/color_text"
+            android:textSize="26sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

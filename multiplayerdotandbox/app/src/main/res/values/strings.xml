@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Multiplayer Dots and Boxes</string>
+    <string name="home_screen">Home</string>
+    <string name="Android">Android</string>
+
+    <string name="pref_key_sound">pref_sound</string>
+    <string name="player1TurnName">Your</string>
+    <string name="player2TurnName">Android\'s</string>
+    <string name="turn_text">%s turn</string>
+    <string name="you">You</string>
+    <string name="score_default">0</string>
+    <string name="your_turn">Your turn</string>
+
+    <string name="game_exit">Do you want to exit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="txt_how_to_play"><u>How To Play?</u></string>
+    <string name="txt_select_difficulty_level">Select Difficulty Level</string>
+    <string name="txt_easy">Easy</string>
+    <string name="txt_medium">Medium</string>
+    <string name="txt_hard">Hard</string>
+    <string name="txt_restart">Restart</string>
+    <string name="txt_home">Home</string>
+</resources>

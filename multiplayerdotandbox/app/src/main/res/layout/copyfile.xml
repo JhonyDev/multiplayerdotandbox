@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/type1"
+    android:layout_height="700dp"
+    android:gravity="center"
+    tools:context=".activities.MainActivity"
+    app:layout_constraintBottom_toBottomOf="@id/guideline2"
+    android:background="@drawable/mode">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.01" />
+
+    <TextView
+        android:id="@+id/txtGameType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="325dp"
+        android:layout_marginRight="40dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/muli_bold"
+        android:text="Select Game Type"
+
+        android:textColor="@color/color_text"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/type1"
+        />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutGameType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.797"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGameType">
+
+        <TextView
+            android:id="@+id/gameTypeSinglePlayer"
+            android:layout_width="140sp"
+            android:layout_height="200sp"
+            android:layout_marginLeft="25dp"
+
+
+
+            android:clickable="true"
+            android:focusable="true"
+
+
+            android:fontFamily="@font/muli_semi_bold"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:text="Single Player"
+            android:textAlignment="center"
+            android:textColor="@color/color_text"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/gameTypeMultiPlayer"
+            android:layout_width="140sp"
+            android:layout_height="200sp"
+            android:layout_marginLeft="8dp"
+            android:textAllCaps="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/muli_semi_bold"
+            android:gravity="center"
+            android:text="Multi Player"
+            android:textAlignment="center"
+            android:textColor="@color/color_text"
+            android:textSize="25sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

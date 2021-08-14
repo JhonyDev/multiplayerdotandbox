@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".activities.DifficultySelectionActivity"
+    android:background="@drawable/leve">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtGameType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:fontFamily="@font/muli_bold"
+        android:layout_marginTop="110dp"
+        android:text="@string/txt_select_difficulty_level"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/color_text"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutGameType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGameType">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/difficultyEasy"
+            android:layout_width="300sp"
+            android:layout_height="60sp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="100dp"
+
+            android:checked="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/muli_semi_bold"
+            android:gravity="center"
+            android:text="@string/txt_easy"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/color_text"
+            android:textSize="24sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/difficultyMedium"
+            android:layout_width="300sp"
+            android:layout_height="60sp"
+            android:layout_marginTop="25sp"
+            android:textAllCaps="true"
+
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/muli_semi_bold"
+            android:gravity="center"
+            android:text="@string/txt_medium"
+            android:textAlignment="center"
+            android:textColor="@color/color_text"
+            android:textSize="24sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/difficultyHard"
+            android:layout_width="300sp"
+            android:layout_height="60sp"
+            android:layout_marginTop="44sp"
+            android:textAllCaps="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/muli_semi_bold"
+            android:gravity="center"
+            android:text="@string/txt_hard"
+            android:textAlignment="center"
+            android:textColor="@color/color_text"
+            android:textSize="24sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

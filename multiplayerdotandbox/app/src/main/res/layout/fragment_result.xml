@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/grid"
+    android:minWidth="370dp"
+    android:orientation="vertical"
+    android:padding="16sp"
+    >
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_win_loss"
+        android:layout_width="match_parent"
+        android:layout_marginTop="90dp"
+        android:layout_marginRight="100dp"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/color_black_chocolate"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="You Win" />
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/orange_box_filled"
+
+        android:layout_marginRight="100dp"
+
+
+        android:ems="6"
+        android:gravity="center_horizontal"
+        android:padding="8sp"
+        android:layout_marginTop="90dp"
+        android:text="@string/txt_home"
+        android:textAllCaps="true"
+        android:textColor="@color/color_black_chocolate"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="50sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

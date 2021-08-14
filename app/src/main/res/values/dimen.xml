@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="dot_size">5sp</dimen>
+    <dimen name="default_box_size">20sp</dimen>
+    <dimen name="default_snap_length">10sp</dimen>
+
+</resources>
